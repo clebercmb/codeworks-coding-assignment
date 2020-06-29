@@ -1,0 +1,140 @@
+.root {
+    background: rgb(201, 199, 199);
+    /*height: 500px;
+    min-width: 800px;*/
+    max-width: 800px;
+    margin: auto;
+    padding: 5px
+}
+
+h1 {
+    text-align:  center;
+}
+
+.navbar  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search {
+    height: 100%;
+}
+.search input {
+    margin-right: 5px;
+    height: 30px;
+    width: 250px;
+
+}
+
+input {
+
+    background: white;
+    border: 1px solid rgb(212, 214, 214);
+    outline: none;
+    transition: 0.1s;
+}
+
+
+.button {
+    background: #46B704;
+    width: 143.53px;
+    height: 40px;
+    left: 199px;
+    top: 546px;
+    border-radius: 5px;
+    color: #ffffff
+}
+
+.contact-list {
+    margin-top: 20px;
+
+    align-items: center;
+
+}
+
+
+.contact-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    background: #fff;
+    /*opacity: 0; */
+}
+
+.contact-list-item-hidden {
+    display: none
+}
+
+
+.contact-list-item:nth-child(2n) {
+    background: #f7f7f7;
+}
+
+.contact-list-item-left {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 100%;
+    width: 93%;
+}
+.contact-list-item-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    height: 100%;
+    width: 5%;
+}
+
+.contact-list-item-right-save {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    height: 100%;
+    width: 5%;
+
+}
+
+.contact-list-item-left-name {
+    width: 13%;
+    height: 30px;
+    line-height: 30px;
+}
+
+.contact-list-item-left-surname {
+    width: 25%;
+    height: 30px;
+    line-height: 30px
+}
+
+.contact-list-item-left-phone {
+    width: 20%;
+    height: 30px;
+    line-height: 30px
+}
+
+.contact-list-item-left-address {
+    width: 40%;
+    height: 30px;
+    line-height: 30px
+}
+
+.save {
+
+    cursor: pointer;
+}
+
+.edit {
+
+    cursor: pointer;
+
+}
+
+.alt {
+
+    cursor: pointer;
+}

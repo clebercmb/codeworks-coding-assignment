@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codeworks Coding Assignmentt</title>
+
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+
+    
+    <link rel="stylesheet" type="text/css" href="./reset.css">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class='root'>  
+
+        <nav class='navbar'>
+            <label>Contact List</label>
+            <div class='search'>
+                <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Search a contact"
+                    name="fullName"
+                    value=''
+                    onkeypress='search(event)'
+                />
+                <!--button class='button'>Add Contact</!--button-->
+
+            </div>
+        </nav>
+
+
+        <ul id='contact-list' class='contact-list'>
+
+            <li id='add-contact' hidden='true' class='contact-list-item'>
+                <div id='' class='contact-list-item-left'>
+                    <input type="text" class="contact-list-item-left-name" placeholder="Name" id='name' name="name" value='' maxlength=11/>
+                    <input type="text" class="contact-list-item-left-surname" placeholder="Surname" id='surname' name="surname" value='' maxlength=22/>
+                    <input type="text" class="contact-list-item-left-phone" placeholder="Phone number" id='phone' name="fullName" value='' maxlength=16/>
+                    <input type="text" class="contact-list-item-left-address" placeholder="Address" id='address' name="fullName" value='' maxlength=34>
+                </div>
+                <div class='contact-list-item-right-save'>
+                    <i class="far fa-save save" onclick="save()"></i>
+                </div>
+            </li>            
+
+
+            <li class='contact-list-item searchable'>
+                <div id='' class='contact-list-item-left'>
+                    <label class='contact-list-item-left-name'>Name:</label>
+                    <label class='contact-list-item-left-surname'>Surname:</label>
+                    <label class='contact-list-item-left-phone'>Phone Number</label>
+                    <label class='contact-list-item-left-address'>Address:</label>
+                </div>
+                <div class='contact-list-item-right'>
+                    <!--i class="far fa-edit edit"></!--i-->
+                    <i class="far fa-trash-alt alt" onclick='remove(event)'></i>
+                </div>
+            </li>
+
+            
+            <li class='contact-list-item searchable'>
+                <div id='' class='contact-list-item-left'>
+                    <label class='contact-list-item-left-name'>Name:</label>
+                    <label class='contact-list-item-left-surname'>Surname:</label>
+                    <label class='contact-list-item-left-phone'>Phone Number</label>
+                    <label class='contact-list-item-left-address'>Address:</label>
+                </div>
+                <div class='contact-list-item-right'>
+                    <!--i class="far fa-edit edit"></!--i-->
+                    <i class="far fa-trash-alt alt" onclick='remove(event)'></i>
+                </div>
+            </li>
+
+            
+            <li class='contact-list-item searchable'>
+                <div id='' class='contact-list-item-left'>
+                    <label class='contact-list-item-left-name'>Name:</label>
+                    <label class='contact-list-item-left-surname'>Surname:</label>
+                    <label class='contact-list-item-left-phone'>Phone Number</label>
+                    <label class='contact-list-item-left-address'>Address:</label>
+                </div>
+                <div class='contact-list-item-right'>
+                    <!--i class="far fa-edit edit"></!--i-->
+                    <i class="far fa-trash-alt alt" onclick='remove(event)'></i>
+                </div>
+            </li>
+  
+
+
+        </ul>
+
+    </div>
+    
+    <script src="./index.js"></script>
+</body>
+</html>
